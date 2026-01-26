@@ -26,9 +26,9 @@ pipeline {
     }
 
     stage('Test') {
-      steps {
-        sh 'npm test -- --watchAll=false'
-      }
+        steps {
+            sh './jenkins/scripts/test.sh'
+        }
     }
   }
 }
